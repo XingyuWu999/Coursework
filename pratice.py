@@ -79,7 +79,6 @@ for _, row in components_of_change_cleaned.iterrows():
         ''', tuple(row)
     )
 
-# Commit changes and close the connection
 conn.commit()
 conn.close()
 
@@ -117,7 +116,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 
-# Births vs Deaths Analysis
+# Births and Deaths Analysis
 births_data = components_of_change_cleaned[components_of_change_cleaned['Category'] == 'Births'].iloc[:, 1:]
 deaths_data = components_of_change_cleaned[components_of_change_cleaned['Category'] == 'Deaths'].iloc[:, 1:]
 
@@ -136,5 +135,4 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 
-# Display the cleaned and properly formatted DataFrame without the index
 print(components_of_change_cleaned.to_string(index=False))
