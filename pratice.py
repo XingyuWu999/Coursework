@@ -136,3 +136,5 @@ plt.tight_layout()
 plt.show()
 
 print(components_of_change_cleaned.to_string(index=False))
+
+components_of_change_cleaned.to_excel('prepared_population_data.xlsx', index=False)
