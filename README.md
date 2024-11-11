@@ -17,6 +17,8 @@ The aim of this project is to analyze data on population change in London from 2
 
 Place the Excel data file `theanalysisofpopulationestimatestool2023ew.xlsx` in the project root directory. The code will automatically load the file and perform data cleaning.
 
+Be sure to open the Excel file before running the code and select the Geography option as LONDON in any worksheet with data and save it. This ensures that the code reads London data correctly and not the rest of the UK.
+
 ### 3. Database Creation and Data Storage
 
 Run the following script to create an SQLite database and store the data:
